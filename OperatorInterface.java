@@ -20,12 +20,12 @@ public class OperatorInterface extends SubsystemBase {
         Drivetrain Drive = Drivetrain.getInstance();
         double left = driverCTRL.getRawAxis(1);
         double right = driverCTRL.getRawAxis(5);
-        double rightE = driverCTRL.getRawAxis(4);
-        boolean pressJoyL = driverCTRL.getRawButton(8);
-        boolean pressJoyR = driverCTRL.getRawButton(9);
+        double rightE = driverCTRL.getRawAxis(2);
+        boolean pressJoyL = driverCTRL.getRawButton(10);
+        boolean pressJoyR = driverCTRL.getRawButton(11);
         Drive.setMotor(left, right, rightE, pressJoyL, pressJoyR);
-        boolean xButton = driverCTRL.getRawButton(0);
-        
+        boolean xButton = driverCTRL.getRawButton(1);
+
     }
 
     public static OperatorInterface getInstance(){
